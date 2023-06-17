@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>JSM Automation</title>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<link href="css/register_styles.css" rel='stylesheet' type='text/css' />
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+</head>
+
+<body>
+	<h1>JSM Automation </h1>
+	<div class="login_page">
+
+		<form action="index.html">
+			<div class="agile-field-txt">
+				<label>
+					<i class="fa fa-user" aria-hidden="true"></i>PIN :</label>
+				<input type="text" name="name" placeholder=" " required="" />
+			</div>
+			<div class="agile-field-txt">
+				<label>
+					<i class="fa fa-lock" aria-hidden="true"></i> New Password :</label>
+				<input type="password" name="password" placeholder=" " required="" id="myInput" />
+				<div class="agile_label">
+					<input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+					<label class="check" for="check3">Show password</label>
+				</div>
+			</div>
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myInput");
+					if (x.type === "password") {
+						x.type = "text";
+					} else {
+						x.type = "password";
+					}
+				}
+			</script>
+			<div class="login_page  w3l-sub">
+				<input type="submit" value="Confirm">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

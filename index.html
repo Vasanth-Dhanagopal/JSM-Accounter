@@ -1,0 +1,50 @@
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>JSM AUTOMATION</title>
+	<link href="css/login_styles.css" rel='stylesheet' type='text/css' />
+
+
+</head>
+
+<body>
+	<h1>JSM AUTOMATION </h1>
+	<div class="login_page">
+		<form action="home.html">
+			<div class="agile-field-txt">
+				<label>
+					<i class="fa fa-user" aria-hidden="true"></i> Username :</label>
+				<input type="text" name="name" placeholder=" " required="" />
+			</div>
+			<div class="agile-field-txt">
+				<label>
+					<i class="fa fa-lock" aria-hidden="true"></i> password :</label>
+				<a href="Register.html" class="w3ls-right">forgot password?</a>
+				<input type="password" name="password" placeholder=" " required="" id="myInput" />
+				<div class="agile_label">
+					<input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+					<label class="check" for="check3">Show password</label>
+				</div>
+			</div>
+			<script>
+				function myFunction() {
+					var x = document.getElementById("myInput");
+					if (x.type === "password") {
+						x.type = "text";
+					} else {
+						x.type = "password";
+					}
+				}
+			</script>
+	
+			<div class="login_page  w3l-sub">
+				<input type="submit" value="Login">
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html>

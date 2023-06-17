@@ -1,0 +1,16 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100%;
+	background: url(../img/register_banner.jpg)no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+h1{
+    position: absolute;
+    top:10px;
+    left:270px;
+    font-size: 60px;
+    text-shadow: 2px 0px 0px #fff;
+}
